@@ -1,0 +1,48 @@
+.idea/
+*.bat
+.DS_Store
+node_modules
+target
+build
+/dist*/
+/deploy_config/dev/*.js
+/deploy_config/dev/styles/
+# local env files
+.env.local
+.env.*.local
+_static
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+app-generator/dist/**
+app-generator/dist/
+app-generator/node_modules/**
+app-generator/node_modules/
+app-generator/data/*/activity/**
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+public/local/
+local/
+public_html
+
+## Tech documentation's produced files
+*/doc/*.pdf
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+
+scratch.*
+macosx*
+*.creator.user
