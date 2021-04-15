@@ -22,10 +22,11 @@
 	* also kann nur die Arbeite eines Tages verloren sein
 * Auch stündlich macht Sinn, auch wöchentlich und monatlich
 	* 5-10 pro Rythmus halten
+	* Rolling backup
 * Hintergrundprogrammen
 * Regelmäßige Snapshots (also, nicht alles wieder und wieder)
 * ... immer beachten: Wie lange dauert ein Restore?
-	* Schlechtes Beispiel: Brand bei OVH (Straßburg): 3 Monate Downtime
+	* Schlechtes Beispiel: Brand bei OVH (Straßburg): 1 Monate Downtime
 
 
 --- 
