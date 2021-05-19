@@ -48,13 +48,7 @@
 ... siehe JakartaEE Tutorial
 https://eclipse-ee4j.github.io/jakartaee-tutorial/cdi-basic010.html
 
+https://memorynotfound.com/cdi-managed-bean-example-with-named/
+
 
 --- 
-
-
-## ...
-
-...
-
---- 
-
