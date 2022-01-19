@@ -53,6 +53,26 @@
 
 ---
 
-## Bei mir?
+## Beyond eigenes Hosting: Cloud
 
-... 
+* Heutzutage erwartet mann Cloud
+* Günstige, funktionsorientierte Einheiten
+* (halb-)automatische Skalierung
+* Normal wäre ein _App Service_:
+  * einfache Umgebung, um individuelle Funktionen zu laufen
+  * wenig Umgebungsabhängigkeiten
+  * HTTP(S)-Erreichbarkeit, Monitoring, ...
+  * Rest ist static
+
+
+---
+
+## App Services für Java
+
+* [Azure Java](https://docs.microsoft.com/en-us/azure/developer/java/) kann es als Linux Umgebung oder App Service anbieten
+  * proprietäre Clients, teilw proprietäre APIs, aber auch Linux
+* [AWS Java](https://aws.amazon.com/de/developer/language/java/)
+  * nur mit deren Tools, soweit, dass sie ihre eigene JDK verteilen
+* [Google AppEngine for Java](https://cloud.google.com/appengine/docs/java/): kleien Funktionen oder kompletten (docker-basierten) Umgebungen
+* mit kleine Funktionen ist die Rechnung genauer und bedarfsorientiert
+* Providerbindung kommt sehr schnell
