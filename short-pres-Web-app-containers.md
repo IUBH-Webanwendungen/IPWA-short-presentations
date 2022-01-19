@@ -53,6 +53,16 @@
 
 ---
 
+## Hosting einkaufen?
+
+* Es existiert, ist aber nicht so verbreitet
+  * zB [profi1 tomcat](https://www.profi1.de/tomcat-hosting.html)
+  * auch [hier](https://www.mochahost.com/de/jsp_hosting.php)...
+* Virtuelle Maschinen die vorkonfiguriert sind, etwa von Bitnami, oder [auf DigitalOcean](https://www.digitalocean.com/community/tutorials/install-tomcat-9-ubuntu-1804)
+* Docker-basiert
+
+---
+
 ## Beyond eigenes Hosting: Cloud
 
 * Heutzutage erwartet mann Cloud
