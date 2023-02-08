@@ -1,7 +1,7 @@
 # Intro to web-proxies
 
 ## Web-anwendungen IUBH
-## 2020-05-20 Paul Libbrecht
+## 2023-02-05 Paul Libbrecht, CC-BY
 
 --- 
 
@@ -19,7 +19,9 @@
 * Client stellt eine HTTP-Anfrage
 * Proxy _wiederholt_ die Anfrage
 	* eventuell verändert
-	* eventuell mit spezielle Proxy-Verpackung
+		* Typisch: Headers
+	* oft: gebuffered
+
 
 --- 
 
@@ -27,12 +29,12 @@
 
 * Um Ressourcen zu schonen (Meist _Forward Proxy_):
 	* Lagert in Cache und serviert nochmals ohne zu fragen
-	* oder servier komprimiert
-	* zB für eine Schulklasse
+	* oder servier komprimiert, zB für eine Schulklasse
 * Um Inhalt zu filtrieren
 	* zB Hotel WLAN Login
-* Als _Front-Server_: Bündelung und Connection-Management
+* Als _Front-Server_: Bündelung und Connection-Management 
 * zB als Load-Balancer
+	* Reverse Proxies
 
 --- 
 
@@ -47,7 +49,8 @@
 
 - - - 
 
-## Proxy demo: Apache
+## Proxy demo
+* Apache [mod_proxy](https://httpd.apache.org/docs/trunk/mod/mod_proxy.html)
 * `ProxyPass / http://127.0.0.1:38888/`
 * Egal was reinkommt, wird zum Port 38888
 	* Apache _reinkommt_ : Wird im Konfig niedergeschrieben
@@ -55,10 +58,34 @@
 * Setzt `X-Forwarded-*` Kopfzeilen
 * Sehr verbreitet als Front-Server: zB um ein Teil static zu liefern
 * Muss mit Redirects aufpassen (_richtiges Hostname_)
+	* `ProxyPassReverse`
+* ... auch NGinx, HAproxy, ...
 
-## Proxy Demo: Apache: Weiter
-* Spice it up mit einem SSH Tunnel
-	* Port 38888 => Mein Port 38888
-* Erlaubt Laptopentwicklung
-	* aber (stabiles) Server mit HTTPS
-* Auch noch mehr: Achtung zum Server-name beim Redirect
+- - -
+
+## Reverse Proxies in der Welt
+* Kommerzielles Angebot (Schutz, Performanz, Caching, ...):
+	* CloudFlare
+	* Amazon CloudFront, Akamai
+	* Azure, Google, AWS...
+	* Konsequenz: Protokollen können gewechselt werden, etwa... https nur am Front
+* Normale Docker Landschaft:
+	* privates Subnet, verschiedene Servers auf verschiedene Adressen
+	* bestimmte Porteröffnungen
+	* typischerweise dann ein Apache oder NGinx davor
+- Load-balancing: Session stickyness (zb JSESSIONID): spricht den selben App Server an als früher
+- Viele Implementationen: NGinx, Apache, Traefik...
+* Sicherheitsproxies:
+	* _Web Application Firewalls_
+	* Simple Password... (Fest im Front Server, auch Signaturprüfend oder Decoding)
+- - -
+
+## Demo: NGinx, DNS und eigenen Domänen
+
+...
+
+- - -
+## Breite Anwendung von Proxies
+
+* Route zum richtigen
+- Informationsfiltern
