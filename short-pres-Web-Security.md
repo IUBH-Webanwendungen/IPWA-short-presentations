@@ -9,7 +9,7 @@
 
 * Ein Protokoll durch Sockets, Client-basiert, Request-Response basiert
 * Telnet Demo
-* Inspector
+* Web-Inspector
 
 ---
 ## Was heisst Web-Security?
@@ -35,14 +35,19 @@
 	* ... possessed
 ---
 ## Elementare Hygiene
-* innerHTML => innerText
+* innerHTML, document.write => innerText
 * nur HTML oder JS produzieren, wo Strings vertraut sind
 * statische Webseiten bevorzugen
 	* (=> Microservices)
 * Server software als unprivilegiertes Benutzer laufen
+* Entwicklung von Produktion trennen
 * Server software code nur von anderen schreibbar
 * DB-Anfragen bei Parametern, kein String-concat!
-* Externes Monitoring mit Benachrichtigung
+	* query = "select * from user where name like '%?%';"; query.setParam(1,name);
+* Externes/Internes Monitoring mit Benachrichtigung
+* Aktualisierungen
+* Schlankere Systeme
+* HTTP-only cookies
 * Weiter:
 	* Server-Performanz, pro Benutzer Begrenzung (insb Video), immer Platz für Admin-Zugang lassen,
 	* Web-Application-Firewall?
