@@ -1,7 +1,7 @@
 # Discovering WebPack
 
 ## Web-anwendungen IUBH
-## 2022-11-30 Paul Libbrecht
+## 2023-07-26 Paul Libbrecht
 
 --- 
 
@@ -18,13 +18,14 @@
 * Werkzeuge für jede Stufe
 	* Verkleinerung, Verdichtung, Zusammenbringen, ...
 	* Alle zusammenbringen: bundler, wie etwa WebPack
-	* Und nur anwenden, wenn nötig
+	* Und: nur anwenden, wenn nötig
+
 --- 
 
 ## Werkzeuge
 
 * NodeJS
-* `npm` oder `yarn`
+* `npm` oder `yarn` oder `pnpm` 
 	* starten, zB mit `npm init`
 * `package.json`: Projektbeschreibung
 	* auch mit Abhängigkeiten
@@ -44,7 +45,6 @@
 	* IMG Loader: komprimiert, kopiert oder kombiniert
 	* LESS => konvertiert zu CSS
 	* Typescript => konvertiert zu JS
-	* ... und gibt ein Hash-basiertes Name
 * Loaders arbeiten im `development` oder `production` Modus
 
 
@@ -57,15 +57,18 @@
 	* HTML per Hand, aber mit Verarbeitung
 	* bundle some js
 * [Demo](https://hoplahup.net/tmp/webpack-demo.tgz)
+	* download, `npm ci`, `npx webpack`
+	* Ergebnis in `dist`
 --- 
 
 
 ## Entwicklung mit WebPack: Dev Server
 
 * Idee: so kurze Feedbackschleifen wie möglich 
+* Demo: `npm install --save-dev webpack-dev-server`
 * Eine Quelle-Veränderung => Vorschau direkt
 * Beeinflusst die Entwicklung: Init => Testsituation
-* Demo
+
 --- 
 
 ## Nur das nötige
@@ -90,3 +93,4 @@
 * Weiter gehen mit einem [Tutorial und Größenanalyse](https://www.smashingmagazine.com/2021/06/getting-started-webpack/)
 * Allgemeine [WebPack Documentation](https://webpack.js.org/)
 * Aber viele externe sprechen darüber
+* ... Zukunftswege: TurboPack, Vue3, ...
