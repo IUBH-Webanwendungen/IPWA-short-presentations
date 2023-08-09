@@ -48,7 +48,7 @@
 - C-world: Makefile
 	- only a build system, subtle syntax, script-based, dependencies as libraries (checked by configure)
 	- see [Makefile book](https://www.oreilly.com/openbook/make3/book/), [GNU Make](https://www.gnu.org/software/make/manual/make.html)
-- PHP: Composer, Pear; Perl: CPAN;  TeX: CTAN; Linux: Debian, Bouwer, ...
+- PHP: Composer, Pear; Perl: CPAN;  TeX: CTAN; Linux: Debian; Web: Bouwer, ...
 - Java world: 
 	- [Apache Ant](https://ant.apache.org/): procedural, xml-based
 	- [Apache Maven](https://maven.apache.org/): declarative, xml-based, repository based
@@ -57,7 +57,7 @@
 
 ---
 
-## JS Package Managers
+## Package Managers für Web Projekt
 
 - building web projects
 - we want to:
