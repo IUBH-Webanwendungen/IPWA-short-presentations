@@ -35,6 +35,17 @@
 * Sehr reiches Ökosystem
 
 ---
+## Javascript aber mit HTML
+* Die Mischung bringt Gefahren:
+	* zB das `class` Attribut muss mit `className` ersetzt werden
+* Alles in Komponenten verpackt:
+	* `<Menu>` ist ein mögliches HTML Element: nimmt die (importierte) Komponent
+	* `<menu>` aber nicht (rohes HTML)
+* JSX wird zu JS übersetzt (`createElement` etc)
+* HTML kann zugewiesen werden
+	* => programmierte Abfolgen
+
+---
 ## Die Welt in JavaScript: Browser und Robots
 
 * Alles geht dynamisch: JS muss aktiv sein
