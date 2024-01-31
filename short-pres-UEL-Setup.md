@@ -7,7 +7,8 @@
 ## Konzept: Expression Language
 
 * Expression-Languages (EL)
-	* ...
+	* einfache Ausdrucke
+	* Verbindung zu einem Runtime
 * In meist View-Sprachen gefunden:
 	* in JSF, JSP, Velocity
 	* in PHP, Nunjucks, ...
